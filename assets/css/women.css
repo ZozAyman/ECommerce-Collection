@@ -1,0 +1,128 @@
+.home {
+    background-image: url(../imgs/blog-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.home-text-link {
+    color: #000;
+}
+.home-text-link:hover {
+    color: tan;
+    border: 1px solid #fff;
+    font-weight: 600;
+}
+
+
+
+/* =====================TRENDING=============== */
+.trending-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+.trending-box {
+    transition: all 264ms ease;
+    overflow: hidden;
+}
+.trending-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: all 264ms ease;
+    cursor: pointer;
+    max-height: 100%;
+    overflow: hidden;
+}
+.trending-box:hover img {
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    .trending-wrapper {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trending-wrapper {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .trending-wrapper .box img {
+        width: 100%;
+        
+    }
+}
+
+
+
+/* ================ Fashion ==================== */
+.fashion {
+
+}
+.fashion-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.fashion-box img {
+    width: 100%;
+}
+.fashion-title {
+    color: teal;
+    letter-spacing: 0.8px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.desc-fashion {
+    color: #a3a3a3;
+    font-weight: 600;
+    line-height: 1.3rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+.home-text-link {
+    border-color: tan;
+    color: white;
+    background-color: black;
+    margin: 0rem;
+    margin-top: 1rem;
+}
+.fashion-link:hover {
+    font-weight: 500;
+}
+.home-text-link:hover {
+    color: black;
+    border: 1px solid #333;
+}
+@media screen and (max-width: 992px) {
+    .main-heading {
+        font-size: 1.1rem;
+    }
+    .fashion .fashion-link {
+        font-weight: 600;
+    }
+    .fashion .fashion-link:hover {
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 768px) {
+    .fashion-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .fashion .home-text-link {
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+    .fashion-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}

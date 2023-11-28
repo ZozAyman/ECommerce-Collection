@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+     <!-- ========= Link FontAwesome ========== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>All Products</title>
+</head>
+<body>
+
+
+
+
+
+    <header>
+        <div class="containerr fullnav">
+        <a class="logo" href="index.html"><img src="assets/imgs/header-logo.png" alt=""></a>
+
+        <input type="checkbox" id="nav-check" hidden>
+        
+        <nav class="navbar">
+          <ul class="nav-item">
+            <li><a class="nav-item-link active" href="index.html">Home</a></li>
+            <!-- <li class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+               Collection <i class="fa fa-angle-down"></i>
+              </button>
+              <ul id="dropdown" class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Women's Clothing</a></li>
+                <li><a class="dropdown-item dropdown-itemm" href="#">Men's Clothing</a></li>
+              </ul>
+            </li> -->
+            <li><a class="nav-item-link" href="sign.html">Login</a></li>
+        </ul>
+        </nav>
+
+        <label for="nav-check" class="ham">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        
+        <i class='fa fa-shopping-bag' id="cart-icon"></i>
+        
+         <!-- CART -->
+         <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+
+          <!-- CONTENT  -->
+          <div class="cart-content">
+
+
+          </div>
+
+          <!-- TOTAL   -->
+          <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+          </div>
+          <!-- BUY BUTTON  -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- CART CLOSE  -->
+          <i class='fa fa-close' id="cart-close"></i>
+      </div>
+
+    </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- SHOP SECTION  -->
+
+        <!-- CONTENT  -->
+        <section class="products container pd-y">
+
+            <div class="main-heading">
+                <h2>Shopping Cart</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit Quo doloremque dolores quaerat.</p>
+              </div>
+
+              <div class="filter-buttons">
+                <button class="active-btn" type="button" data-name="all">All</button>
+                <button type="button" data-name="men">Men</button>
+                <button type="button" data-name="women">Women</button>
+                <button type="button" data-name="kids">Kids</button>
+              </div>
+            
+            <div class="shop-content">
+                <!-- BOX 1 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/sports-2.jpg" alt="" class="product-img defult">
+            <img src="assets/imgs/products/sports-4.jpg" alt="" class="product-img hover">
+          </div>
+          <h2 class="product-title">Nike Shoes</h2>
+          <span class="product-price">$79.5</span>
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        </div>
+      <!-- BOX 2 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/product2.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/product2-1.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">BACKPACK</h2>
+          <span class="product-price">$59.5</span>
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        </div>
+      <!-- BOX 3 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/G6.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/G8.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">METAL BOTTLE</h2>
+          <span class="product-price">$29.5</span>
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        </div>
+      <!-- BOX 4 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/product4.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/meta-sunglasses.png" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">METAL SUNGLASSES</h2>
+          <span class="product-price">$105</span>
+        
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 5 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/popular1-1.png" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/popular1-2.png" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">PS5 Controller</h2>
+          <span class="product-price">$95</span>
+        
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 6 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/shirt-1.jpg" alt="shirt one" class="product-img defult">
+            <img src="assets/imgs/products/shirt-2.jpg" alt="shirt two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Galaxy Z Fold</h2>
+          <span class="product-price">$1400</span>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        
+        </div>
+      <!-- BOX 7 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/basic-shirt-1.png" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/basic-shirt-2.png" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Nokon Camera</h2>
+          <span class="product-price">$1700</span>
+          
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 8 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/clothes-3.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/clothes-4.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 9 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/jacket-1.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/jacket-2.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+          
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 10 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/jewellery-1.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/jewellery-3.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+          
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+       
+        </div>
+      <!-- BOX 11 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/party-wear-2.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/party-wear-1.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        </div>
+      <!-- BOX 12 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/shoe-1.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/shoe-1_1.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        
+        </div>
+      <!-- BOX 13 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/shoe-2.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/shoe-2_1.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+       
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 14 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/shorts-2.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/shorts-1.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 15 -->
+        <div class="product-box" data-name="kids">
+          <div class="products-imgs">
+            <img src="assets/imgs/boys-dress-1.jpeg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/boys-dress-2.jpeg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+       
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 16 -->
+        <div class="product-box" data-name="kids">
+          <div class="products-imgs">
+            <img src="assets/imgs/kids-dress-1.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/kids-dress-2.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+        
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+       
+        </div>
+      <!-- BOX 17 -->
+        <div class="product-box" data-name="kids">
+          <div class="products-imgs">
+            <img src="assets/imgs/three-hundred-boys.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/three-hundred-boys-2.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+          
+        </div>
+      <!-- BOX 18 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/two-hundred-ladies-1.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/two-hundred-ladies.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 19 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/jacket-5.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/jacket-6.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+        
+        </div>
+      <!-- BOX 20 -->
+        <div class="product-box" data-name="men">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/watch-1.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/watch-2.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+         
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 21 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/product12.png" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/product12-2.png" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+          
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 22 -->
+        <div class="product-box" data-name="women">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/apparel4.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/apparel5.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+          
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+      <!-- BOX 23 -->
+        <div class="product-box" data-name="man">
+          <div class="products-imgs">
+            <img src="assets/imgs/products/jacket-3.jpg" alt="watch one" class="product-img defult">
+            <img src="assets/imgs/products/jacket-4.jpg" alt="watch two" class="product-img hover">
+          </div>
+          <h2 class="product-title">Apple Watch</h2>
+          <div class="product-price">
+            <span class="product-price-old"><del>$110.5</del></span>
+            <span class="product-price-new">$100</span>
+          </div>
+          
+            <i class='fa fa-shopping-cart add-cart action-btn' aria-label="Add To Cart"></i>
+         
+        </div>
+
+
+          
+        </div>  
+
+        </section>
+
+
+
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
